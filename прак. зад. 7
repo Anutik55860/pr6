@@ -1,0 +1,20 @@
+def double_or_abs (a, b, c):
+    if a >= b >= c:
+      a *=2
+      b *=2
+      c *=2
+    else:
+         a=abs(a)
+         b=abs(b)
+         c=abs(c)
+    return a, b, c
+a=float(input("Ввести значение a:"))
+b=float(input("Ввести значение b:"))   
+c=float(input("Ввести значение c:"))  
+
+a_new, b_new, c_new =double_or_abs (a, b, c)
+print("новые значения:")
+print( "a: ",a_new)
+print( "b: ", b_new)
+print( "c: ", c_new)
+
